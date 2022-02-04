@@ -54,6 +54,7 @@ def hook2(request):
     r = requests.post(SLACK_WEBHOOK, data=json.dumps(payload_dic))
     return HttpResponse(r)
 
+@csrf_exempt
 def inv(request):
     if request.method == 'POST':
         print('aaaaa')
