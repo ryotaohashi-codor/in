@@ -66,6 +66,6 @@ def inv(request):
         }
 
         r = requests.post(SLACK_WEBHOOK, data=json.dumps(payload_dic))        
-        return HttpResponse('a')
+        return HttpResponse(r)
     else:
         return HttpResponse('b')
