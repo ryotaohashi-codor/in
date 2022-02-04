@@ -56,6 +56,7 @@ def hook2(request):
 
 def inv(request):
     if request.method == 'POST':
+        print('aaaaa')
         return HttpResponse('a')
     else:
         return HttpResponse('b')
