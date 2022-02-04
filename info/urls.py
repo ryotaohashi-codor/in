@@ -23,5 +23,5 @@ urlpatterns = [
     path('login/', login_page),
     path('logined', abc, name='home'),
     path('hook/', hook), 
-    path('inv/' inv),
+    path('inv/', inv),
 ]
