@@ -57,7 +57,15 @@ def hook2(request):
 @csrf_exempt
 def inv(request):
     if request.method == 'POST':
-        print('aaaaa')
+        SLACK_WEBHOOK = "https://hooks.slack.com/services/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"
+
+        payload_dic = {
+            "text": "新しいメールが届きました",
+            "username": "same",
+            "channel": "#general",
+        }
+
+        r = requests.post(SLACK_WEBHOOK, data=json.dumps(payload_dic))        
         return HttpResponse('a')
     else:
         return HttpResponse('b')
