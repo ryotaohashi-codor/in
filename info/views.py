@@ -53,3 +53,7 @@ def hook2(request):
 
     r = requests.post(SLACK_WEBHOOK, data=json.dumps(payload_dic))
     return HttpResponse(r)
+
+def inv(request):
+    context = 'a'
+    return render(request, 'a.html', {context:context})
