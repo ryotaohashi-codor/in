@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from .views import login_page, abc, hook
+from .views import login_page, abc, hook, inv
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login_page),
     path('logined', abc, name='home'),
     path('hook/', hook), 
+    path('inv/', inv),
 ]
