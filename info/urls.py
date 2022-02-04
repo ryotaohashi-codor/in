@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', login_page),
     path('logined', abc, name='home'),
-    path('hook/', hook),
+    path('hook/', hook), 
 ]
